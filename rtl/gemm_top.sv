@@ -21,7 +21,7 @@ module gemm_top #(
         .din(b_row), .dout(b_skewed)
     );
 
-    // the array you already built
+    
     systolic_array #(.N(N)) array (
         .clk(clk), .rst(rst), .en(en),
         .a_left(a_skewed), .b_top(b_skewed), .c(c)
